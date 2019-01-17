@@ -27,6 +27,9 @@ matrix:
 
 before_install:
   # download node if testing x86 architecture
+  - if [ $TRAVIS_OS_NAME == "windows" ]; then
+    choco install nvs
+    fi
   - if [ $TRAVIS_OS_NAME != "windows" ]; then
     nvm install $TRAVIS_NODE_VERSION;
     fi
