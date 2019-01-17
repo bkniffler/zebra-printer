@@ -27,12 +27,8 @@ matrix:
 
 before_install:
   # download node if testing x86 architecture
-  - if [ $TRAVIS_OS_NAME == "windows" ]; then
-    choco install nvs;
-    fi
-  - if [ $TRAVIS_OS_NAME != "windows" ]; then
-    nvm install $TRAVIS_NODE_VERSION;
-    fi
+  - if [ $TRAVIS_OS_NAME == "windows" ]; then choco install nvs; fi
+  - if [ $TRAVIS_OS_NAME != "windows" ]; then nvm install $TRAVIS_NODE_VERSION; fi
   #- >
   #  if [[ "$ARCH" == "x86" ]]; then
   #    BASE_URL=$(node -p "'https://nodejs.org/dist/' + process.version");
