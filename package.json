@@ -1,8 +1,8 @@
 {
-  "name": "printer-prebuild",
-  "description": "Node.js printer bindings",
+  "name": "zebra-printer",
+  "description": "Node.js zebra-printer bindings",
   "version": "0.3.0",
-  "homepage": "http://github.com/bkniffler/node-printer",
+  "homepage": "http://github.com/bkniffler/zebra-printer",
   "author": {
     "name": "Ion Lupascu",
     "url": "http://program-support.co.uk/",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/bkniffler/node-printer.git"
+    "url": "git://github.com/bkniffler/zebra-printer.git"
   },
   "devDependencies": {
     "nodeunit": "*",
