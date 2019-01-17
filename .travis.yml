@@ -6,7 +6,7 @@ language: cpp
 os:
   - linux
   - osx
-  - windows
+  # - windows
 env:
   matrix:
     # - TRAVIS_NODE_VERSION="6"
@@ -27,7 +27,7 @@ matrix:
 
 before_install:
   # download node if testing x86 architecture
-  - if [ $TRAVIS_OS_NAME == "windows" ]; then choco install nvs; fi
+  # - if [ $TRAVIS_OS_NAME == "windows" ]; then choco install nvs; fi
   - if [ $TRAVIS_OS_NAME != "windows" ]; then nvm install $TRAVIS_NODE_VERSION; fi
   #- >
   #  if [[ "$ARCH" == "x86" ]]; then
